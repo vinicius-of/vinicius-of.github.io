@@ -1,0 +1,26 @@
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2356;
+    color: white;
+    margin: 0.5rem 1rem;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+.projectItem > h3 {
+    font-size: 1.5rem;
+}
+
+.projectItem > p {
+    text-align: justify;
+
+}
+
+.containerImage {
+}
+
+.image {
+}

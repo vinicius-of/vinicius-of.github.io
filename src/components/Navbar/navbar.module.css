@@ -1,0 +1,13 @@
+nav {
+    background-color: #586Ae2;
+    display: block;
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    padding: 16px;
+    border-radius: 10px;
+    z-index: 10;
+    display: none;
+}
