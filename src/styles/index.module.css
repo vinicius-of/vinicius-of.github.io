@@ -1,0 +1,15 @@
+.descriptions {
+    padding: 1rem 0;
+}
+
+.bottomSquare {
+    width: 100%;
+    height: 45px;
+    background-color: var(--secondary-color);
+}
+
+.mainContainer {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
