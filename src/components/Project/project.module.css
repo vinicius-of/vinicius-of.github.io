@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2a2356;
-    color: white;
-    margin: 0.5rem 1rem;
+    color: var(--text-color-light);
     padding: 2rem;
-    border-radius: 25px;
+}
+
+.projectItem > * {
+    margin-bottom: 1rem;
 }
 
 .projectItem > h3 {
@@ -16,11 +17,12 @@
 
 .projectItem > p {
     text-align: justify;
-
 }
 
-.containerImage {
+.projectItem:last-child {
+    margin-bottom: 0;
 }
 
-.image {
+.roleStyle {
+    color: darkgray;
 }
