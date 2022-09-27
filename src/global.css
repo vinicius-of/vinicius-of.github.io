@@ -1,6 +1,14 @@
 :root {
     font-size: 16px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    --background-color: #2a2356;
+    --text-color-light: aliceblue;
+    --primary-color: #586ae2;
+    --pdf-button-color: #ec0b43;
+    --secondary-color: #6ecbf5;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -9,7 +17,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
 }
