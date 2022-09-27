@@ -1,13 +1,54 @@
-nav {
-    background-color: #586Ae2;
-    display: block;
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
     position: fixed;
-    top: 85%;
+    top: 82vh;
     left: 50%;
-    width: 80%;
+    width: 90%;
     transform: translateX(-50%);
-    padding: 16px;
+    padding: 0.5rem;
     border-radius: 10px;
     z-index: 10;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.692);
+    animation: show 500ms;
+}
+
+.navbar svg {
+    width: 28px;
+    height: 100%;
+    filter: invert(99%) sepia(61%) saturate(2%) hue-rotate(181deg)
+        brightness(110%) contrast(101%);
+}
+
+.navbar > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.navbar > a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.hide {
     display: none;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
