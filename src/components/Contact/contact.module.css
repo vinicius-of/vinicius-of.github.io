@@ -1,0 +1,30 @@
+.contactContainer {
+    color: var(--text-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 2rem;
+}
+
+.contactContainer > * {
+    margin-bottom: 1.5rem;
+}
+
+.contactContainer > *:last-child {
+    margin-bottom: 7rem;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.linksContainer svg {
+    width: 2.25rem;
+    height: 2.25rem;
+}
