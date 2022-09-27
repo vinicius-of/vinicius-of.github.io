@@ -1,0 +1,15 @@
+.techBadges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.techBadges > * {
+    width: 52px;
+    height: 52px;
+    margin: 0 1.5rem;
+    margin-bottom: 0.5rem;
+}
