@@ -5,6 +5,7 @@
     align-items: center;
     color: var(--text-color-light);
     padding: 2rem;
+    text-align: center;
 }
 
 .projectItem > * {
@@ -13,10 +14,6 @@
 
 .projectItem > h3 {
     font-size: 1.5rem;
-}
-
-.projectItem > p {
-    text-align: justify;
 }
 
 .projectItem:last-child {

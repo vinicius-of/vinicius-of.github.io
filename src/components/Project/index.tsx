@@ -20,7 +20,11 @@ export const Project: FC<ProjectProps> = ({
 }) => {
     return (
         <div className={projectItem}>
-            <GatsbyImage image={imageData} alt={alt} />
+            <GatsbyImage
+                image={imageData}
+                alt={alt}
+                style={{ borderRadius: '50px' }}
+            />
             <h3>{title}</h3>
             <span className={roleStyle}>{role}</span>
             <p>{description}</p>
