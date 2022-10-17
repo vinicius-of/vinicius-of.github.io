@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {
-    AboutPortfolioIcon,
-    ContactIcon,
-    HomeIcon,
-    ProjectsIcon,
-} from '../Svgs';
+import { ContactIcon, HomeIcon, ProjectsIcon } from '../Svgs';
 import ProfileIcon from '../Svgs/ProfileIcon';
 //@ts-ignore
 import { hide, navbar } from './navbar.module.css';
@@ -15,12 +10,7 @@ export const Navbar = () => {
 
     const handleDisplay = () => {
         const isOutOfIntroduction = window.scrollY > limitToHide;
-
-        if (!isOutOfIntroduction) {
-            setClasses(hide);
-        } else {
-            setClasses(navbar);
-        }
+        setClasses(!isOutOfIntroduction ? hide : navbar);
     };
 
     useEffect(() => {
@@ -41,7 +31,7 @@ export const Navbar = () => {
                 <ProfileIcon />
                 <span>Sobre mim</span>
             </a>
-            <a href="#projects">
+            <a href="#experiences">
                 <ProjectsIcon />
                 <span>Experiências</span>
             </a>

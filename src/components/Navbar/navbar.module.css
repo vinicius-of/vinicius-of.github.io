@@ -2,17 +2,17 @@
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
     position: fixed;
     top: 82vh;
     left: 50%;
     width: 90%;
     transform: translateX(-50%);
     padding: 0.5rem;
-    border-radius: 10px;
+    border-radius: 50px;
     z-index: 10;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.692);
     animation: show 500ms;
+    max-width: 425px;
 }
 
 .navbar svg {
@@ -20,6 +20,7 @@
     height: 100%;
     filter: invert(99%) sepia(61%) saturate(2%) hue-rotate(181deg)
         brightness(110%) contrast(101%);
+    margin-bottom: 4px;
 }
 
 .navbar > a {
@@ -28,7 +29,6 @@
     justify-content: center;
     align-items: center;
     font-size: 0.65rem;
-    font-weight: 700;
     width: 100%;
 }
 
@@ -50,5 +50,15 @@ a:link {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar svg {
+        width: 32px;
+    }
+
+    .navbar > a {
+        font-size: 0.8rem;
     }
 }
