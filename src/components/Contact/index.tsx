@@ -4,7 +4,6 @@ import { GithubIcon, LinkedinIcon } from '../Svgs';
 import {
     contactContainer,
     linksContainer,
-    linkedinIcon,
     //@ts-ignore
 } from './contact.module.css';
 
@@ -13,7 +12,7 @@ const Contact = () => {
         <div className={contactContainer}>
             <h2>Contato</h2>
             <p>Aqui você pode encontrar mais detalhes sobre minha carreira!</p>
-            <p>Site feito utilizando React Gatsby!</p>
+            <p>Site feito utilizando React!</p>
             <div className={linksContainer}>
                 <a
                     href="https://github.com/vinicius-of"
@@ -26,7 +25,6 @@ const Contact = () => {
                     rel="nofollow"
                     href="https://www.linkedin.com/in/vin%C3%ADcius-de-oliveira-fonseca-969301177/"
                     target="_blank"
-                    className={linkedinIcon}
                 >
                     <LinkedinIcon />
                 </a>
