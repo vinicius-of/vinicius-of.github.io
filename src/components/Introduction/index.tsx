@@ -9,7 +9,6 @@ import {
     profileContainer,
     bottomSquare,
     downloadButton,
-    flexGrow,
     //@ts-ignore
 } from './intro.module.css';
 
