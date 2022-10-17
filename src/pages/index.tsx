@@ -4,8 +4,13 @@ import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import Article from '../components/Article';
 import '../global.css';
-//@ts-ignore
-import { descriptions, mainContainer } from '../styles/index.module.css';
+import {
+    descriptions,
+    mainContainer,
+    listExperiences,
+    title,
+    //@ts-ignore
+} from '../styles/index.module.css';
 import Introduction from '../components/Introduction';
 import Contact from '../components/Contact';
 
@@ -69,26 +74,27 @@ const IndexPage = () => {
                         para avançar dois.
                     </Article>
                 </section>
-                <section id="projects">
-                    {experiences.map((data: any) => {
-                        const { title, image, imageAlt, content, role } =
-                            data.node.frontmatter;
+                <section id="experiences">
+                    <h2 className={title}>Minhas experiências</h2>
+                    <div className={listExperiences}>
+                        {experiences.map((data: any) => {
+                            const { title, image, imageAlt, content, role } =
+                                data.node.frontmatter;
 
-                        console.log(role);
-
-                        return (
-                            <Project
-                                key={data.node.id}
-                                title={title}
-                                alt={imageAlt}
-                                imageData={
-                                    image.childImageSharp.gatsbyImageData
-                                }
-                                description={content}
-                                role={role}
-                            />
-                        );
-                    })}
+                            return (
+                                <Project
+                                    key={data.node.id}
+                                    title={title}
+                                    alt={imageAlt}
+                                    imageData={
+                                        image.childImageSharp.gatsbyImageData
+                                    }
+                                    description={content}
+                                    role={role}
+                                />
+                            );
+                        })}
+                    </div>
                 </section>
             </main>
             <footer id="contact">
