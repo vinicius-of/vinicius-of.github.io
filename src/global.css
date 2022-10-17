@@ -4,8 +4,9 @@
     --background-color: #2a2356;
     --text-color-light: aliceblue;
     --primary-color: #586ae2;
-    --pdf-button-color: #ec0b43;
     --secondary-color: #6ecbf5;
+    --third-color: #c252e1;
+    --pdf-button-color: #ec0b43;
 }
 
 * {
@@ -17,10 +18,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #2a2356;
+}
+
 h2 {
     font-size: 1.5rem;
 }
 
 p {
     font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1.125rem;
+    }
 }
