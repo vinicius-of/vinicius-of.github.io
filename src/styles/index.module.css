@@ -13,3 +13,32 @@
     margin: 0 auto;
     background-color: var(--background-color);
 }
+
+.listExperiences {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--text-color-light);
+}
+
+@media (min-width: 768px) {
+    .listExperiences > * {
+        max-width: 425px;
+        text-align: center;
+    }
+
+    .descriptions {
+        padding: 2rem 0;
+    }
+
+    .descriptions > * {
+        margin-bottom: 32px;
+    }
+}
