@@ -10,7 +10,7 @@ type ArticleProps = {
 
 export const Article: FC<ArticleProps> = ({ title, children }) => {
     return (
-        <article className={articleItem}>
+        <article className={`${articleItem} highlight-text`}>
             <h2>{title}</h2>
             <p>{children}</p>
         </article>
