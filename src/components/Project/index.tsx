@@ -1,7 +1,7 @@
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import React, { FC } from 'react';
 //@ts-ignore
-import { projectItem, roleStyle } from './project.module.css';
+import { projectItem, roleStyle, stackStyle } from './project.module.css';
 
 type ProjectProps = {
     title: string;
@@ -9,6 +9,7 @@ type ProjectProps = {
     description?: string;
     alt: string;
     role?: string;
+    stack?: string;
 };
 
 export const Project: FC<ProjectProps> = ({
@@ -17,6 +18,7 @@ export const Project: FC<ProjectProps> = ({
     imageData,
     alt,
     role,
+    stack,
 }) => {
     return (
         <div className={projectItem}>
