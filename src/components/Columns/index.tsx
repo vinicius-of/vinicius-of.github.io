@@ -1,18 +1,22 @@
 import React from 'react';
 //@ts-ignore
-import { container, bars } from './columns.module.css';
+import { container, bars, barsShadow } from './columns.module.css';
 
 type Props = {
     width?: string;
     children?: React.ReactNode;
 };
 
-const Columns: React.FC<Props> = ({ width, children }) => {
+const Columns: React.FC<Props> = ({ children }) => {
     return (
         <div className={container}>
-            <section className={bars}></section>
+            <div className={barsShadow}>
+                <div className={bars} />
+            </div>
             <div>{children}</div>
-            <section className={bars}></section>
+            <div className={barsShadow}>
+                <div className={bars} />
+            </div>
         </div>
     );
 };
