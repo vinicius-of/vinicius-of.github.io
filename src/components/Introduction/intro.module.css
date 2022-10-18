@@ -3,14 +3,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color-light);
+    height: 100vh;
 }
 
-.introductionContainer > h1 {
+.introductionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.introductionContent > * {
+    margin-bottom: 1rem;
+}
+
+.title {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
-    flex-grow: 1;
     text-align: center;
     font-size: 1.3rem;
 }
@@ -18,7 +28,6 @@
 .profileContainer {
     border-radius: 50%;
     margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 .bottomSquare {
@@ -34,11 +43,34 @@
     padding: 1rem;
     font-weight: 700;
     border-radius: 10px;
-    margin-bottom: 1rem;
 }
 
 @media (min-width: 1440px) {
-    .introductionContainer {
-        
+    .profileContainer {
+        order: 1;
+    }
+
+    .title {
+        font-size: 2rem;
+        flex-grow: 0;
+        order: 2;
+    }
+
+    .techBadges {
+        order: 3;
+    }
+    
+    .downloadButton {
+        order: 4;
+    }
+
+    .bottomSquare {
+        order: 5;
+    }
+
+    .details {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
     }
 }
