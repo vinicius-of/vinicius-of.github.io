@@ -6,6 +6,7 @@
     width: 100%;
     height: 45px;
     background-color: var(--secondary-color);
+    z-index: 2;
 }
 
 .mainContainer {
@@ -29,16 +30,37 @@
 }
 
 @media (min-width: 768px) {
-    .listExperiences > * {
-        max-width: 425px;
-        text-align: center;
-    }
-
     .descriptions {
         padding: 2rem 0;
     }
 
-    .descriptions > * {
+    .descriptions article {
         margin-bottom: 32px;
     }
+
+    .listExperiences > * {
+        max-width: 425px;
+    }
+
+    .about {
+        margin: 0 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .mainContainer {
+        max-width: none;
+    }
+
+    .descriptions {
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .about {
+        margin: 0 0 4rem 0; 
+    }
+}
+
+@media (min-width: 1920px) {
 }
