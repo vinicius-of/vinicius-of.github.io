@@ -7,6 +7,7 @@
     --secondary-color: #6ecbf5;
     --third-color: #c252e1;
     --pdf-button-color: #ec0b43;
+    --highlight-link-hover: #68b4ff;
 }
 
 * {
@@ -29,6 +30,10 @@ h2 {
 p {
     font-size: 1rem;
     line-height: 1.6;
+}
+
+.highlight-text > h2, h3, h4, p, strong {
+    text-shadow: 1px 2px 1px rgb(0, 0, 0, 0.6);
 }
 
 @media (min-width: 768px) {
