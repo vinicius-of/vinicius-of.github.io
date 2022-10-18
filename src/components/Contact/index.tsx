@@ -1,4 +1,5 @@
 import React from 'react';
+import FastContact from '../FastContact';
 import { GithubIcon, LinkedinIcon } from '../Svgs';
 //@ts-ignore
 import {
@@ -9,10 +10,23 @@ import {
 
 const Contact = () => {
     return (
-        <div className={contactContainer}>
+        <div className={`${contactContainer} highlight-text`}>
             <h2>Contato</h2>
-            <p>Aqui você pode encontrar mais detalhes sobre minha carreira!</p>
-            <p>Site feito utilizando React!</p>
+            <div>
+                <p>Email</p>
+                <a
+                    href="mailto:vinicius.oliveirafonseca@gmail.com"
+                    target="_blank"
+                >
+                    <strong>vinicius.oliveirafonseca@gmail.com</strong>
+                </a>
+            </div>
+            <div>
+                <p>Número de Celular / WhatsApp</p>
+                <p>
+                    <strong>+55 (82) 99639-4392</strong>
+                </p>
+            </div>
             <div className={linksContainer}>
                 <a
                     href="https://github.com/vinicius-of"
@@ -29,6 +43,8 @@ const Contact = () => {
                     <LinkedinIcon />
                 </a>
             </div>
+            <p>Aqui você pode encontrar mais detalhes sobre minha carreira!</p>
+            <p>Site feito utilizando React!</p>
         </div>
     );
 };
